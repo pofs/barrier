@@ -1,0 +1,26 @@
+mixin blog-reviews(year)
+  .blog-reviews(style="background-image: url(./images/blog_news2.jpg);" id= year)
+    .blog-reviews__tittle  Обзор
+    .blog-reviews__inner
+      .blog-reviews__date 12.02.17
+      a(href="#").blog-reviews__header Британская пара нашла бриллианты в старинном стуле
+      a(href="#").blog-news__link Подробнее
+
+mixin question(title,content,className)
+  .question(class='question--'+className)
+    .question__inner
+      .question__title=title
+      .question__content=content
+
+mixin how-work-item(title,content)
+  li.how-work-item
+    .how-work-item__inner
+      .how-work-item__title=title
+      .how-work-item__content=content
+mixin advantage-item(title,content, ico, className)
+  .advantage-item(class='advantage-item--'+className)
+    .advantage-item__inner
+      .advantage-item__ico
+        img(src=ico, alt=title)
+      .advantage-item__title=title
+      .advantage-item__content=content

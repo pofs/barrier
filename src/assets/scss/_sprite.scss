@@ -1,0 +1,67 @@
+@mixin i() {
+  &:before {
+    content: "";
+    display: inline-block;
+    font-size: 10px;
+    background-image: url("../images/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 14.7em 10.5em;
+
+    .no-svg & {
+      background-image: url("../images/sprite.png");
+    }
+  }
+}
+
+[class*='i-'] {
+  display: inline-block;
+
+  &:before {
+    @include i;
+  }
+}
+
+@mixin i-ico-facebook() {
+  &:before {
+    background-position: -0.5em -0.5em;
+    width: 0.9em;
+    height: 1.7em;
+  }
+}
+
+.i-ico-facebook {
+
+  &:before {
+    @include i-ico-facebook;
+  }
+}
+
+@mixin i-ico-twitt() {
+  &:before {
+    background-position: -0.5em -3.2em;
+    width: 1.7em;
+    height: 1.4em;
+  }
+}
+
+.i-ico-twitt {
+
+  &:before {
+    @include i-ico-twitt;
+  }
+}
+
+@mixin i-logo() {
+  &:before {
+    background-position: -0.5em -5.6em;
+    width: 13.7em;
+    height: 4.4em;
+  }
+}
+
+.i-logo {
+
+  &:before {
+    @include i-logo;
+  }
+}

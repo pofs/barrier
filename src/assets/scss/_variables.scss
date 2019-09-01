@@ -1,0 +1,28 @@
+// Fonts
+$f-main: 'Gilroy',Arial,Helvetica,sans-serif;
+
+// Variables
+$color-main: #222222;
+$light-color: #fff;
+
+$bg-main: #fff;
+$color-theme: #F54177;
+
+$font-size: 16px;
+
+$line-height: 1.35;
+
+
+// Ширины
+$screen-xs-up: 0;
+$screen-sm-up: 480px;
+$screen-md-up: 768px;
+$screen-lg-up: 1024px;
+$screen-xl-up: 1200px;
+$screen-xxl-up: 1440px;
+
+$screen-sm-down: $screen-sm-up - 1px;
+$screen-md-down: $screen-md-up - 1px;
+$screen-lg-down: $screen-lg-up - 1px;
+$screen-xl-down: $screen-xl-up - 1px;
+$screen-xxl-down: $screen-xxl-up - 1px;
