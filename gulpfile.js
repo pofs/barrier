@@ -89,9 +89,8 @@ var options = {
 
   package: require('./package.json'),
   banner: ['/*!\n' +
-           ' * <%= package.name %> v<%= package.version %>\n' + // переменные берутся с package.json
+           ' * <%= package.name %> v<%= package.version %>\n' +
            ' * <%= new Date().getFullYear() %> <%= package.author %> (<%= package.homepage %>)\n' +
-           ' * Based on Bootstrap <%= package.bootstrap %>\n' +
            ' */ \n']
 };
 

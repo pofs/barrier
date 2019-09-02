@@ -11,18 +11,42 @@ $window.on('resize', function () {
 });
 
 $window.on('scroll', function () {
-  inWindow()
+  // inWindow()
 });
 // $(document).on('click touchend', '.information__images', infoModal);
 
 //
 $(document).ready(function () {
+  $('.about-slider__inner').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    speed: 300,
+    arrows: true,
 
-  $('#formProfile').h5Validate({
-    errorClass: 'error',
-    validClass: 'success'
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
-
 });
 
 function inWindow() {
@@ -39,19 +63,3 @@ function inWindow() {
   }
 }
 
-$('form').submit(function (e) {
-  var data = $('form').serializeArray();
-  $.ajax({
-    url: "send.php",
-    type: "POST",
-    data: data
-  }).done(function () {
-    console.log('success');
-    $('.sendForm-wrapp').addClass('btn-form--success')
-
-  }).fail(function () {
-    console.log('fail');
-  });
-
-  // e.preventDefault();
-});
