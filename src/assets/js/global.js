@@ -26,20 +26,39 @@ $(document).ready(function () {
 
     responsive: [
       {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-        }
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('.additional-info__wrap').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    speed: 300,
+    arrows: true,
+
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
