@@ -20,7 +20,7 @@
 		<link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="css/styles.min.css?v0.1">
+		<link rel="stylesheet" href="css/styles.min.css?v0.2">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -30,11 +30,11 @@
 						<div class="header__logo"><a class="logo" href="#"><img srcset="images/images/logo.jpg 1x, images/images/logo@2x.jpg 2x" width="208" height="84" alt="Logo"></a></div>
 						<nav class="header__nav nav">
 							<ul class="nav__list">
-								<li class="nav__item"><a class="nav__link" href="#">О проблеме</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Решение</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Пункты приема</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Переработка</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Статьи</a></li>
+								<li class="nav__item"><a class="nav__link" href="#problem">О проблеме</a></li>
+								<li class="nav__item"><a class="nav__link" href="#plan">Решение</a></li>
+								<li class="nav__item"><a class="nav__link" href="#contact">Пункты приема</a></li>
+								<li class="nav__item"><a class="nav__link" href="#what-to-do">Переработка</a></li>
+								<li class="nav__item"><a class="nav__link" href="#info">Статьи</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -55,7 +55,7 @@
 					<div class="problem__bg"></div>
 					<div class="box box--middle">
 						<div class="problem__inner">
-							<div class="problem__data">
+							<div class="problem__data" id="problem">
 								<div class="title">О проблеме</div>
 								<div class="subtitle problem__subtitle">
 									Каждую минуту по всему миру люди покупают около миллиона пластиковых бутылок.
@@ -87,7 +87,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="plan">
+				<div class="plan" id="plan">
 					<div class="box box--middle">
 						<div class="plan__list">
 							<div class="plan__item">
@@ -175,7 +175,7 @@
 					<div class="wrap-section__bg"></div>
 					<div class="wrap-section__fog"></div>
 					<div class="wrap-section__inner">
-						<div class="contact section">
+						<div class="contact section" id="contact">
 							<div class="box box--middle">
 								<div class="contact__inner contact__grid">
 									<div class="contact__cell">
@@ -203,7 +203,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="what-to-do section">
+						<div class="what-to-do section" id="what-to-do">
 							<div class="box box--middle">
 								<div class="what-to-do__inner">
 									<div class="title title--section title--default-space">Я хочу сдать фильтр на переработку, но в моем городе нет пункта приема БАРЬЕР<br>Что делать?</div>
@@ -232,42 +232,24 @@
 						</div>
 					</div>
 				</div>
-				<div class="about-us section">
+				<div class="about-us section" id="info">
 					<div class="box box--middle">
 						<div class="about-us__inner">
 							<div class="title title--default-space title--section">Что о нас говорят?</div>
 							<div class="about-slider">
 								<div class="about-slider__inner">
-									<div class="about-slider__cell">
-										<div class="about-slide">
-											<div class="about-slide__wrap"><img class="about-slider__image" src="images/images/about/about.jpg" alt="slide"></div>
-										</div>
-									</div>
-									<div class="about-slider__cell">
-										<div class="about-slide">
-											<div class="about-slide__wrap"><img class="about-slider__image" src="images/images/about/about.jpg" alt="slide"></div>
-										</div>
-									</div>
-									<div class="about-slider__cell">
-										<div class="about-slide">
-											<div class="about-slide__wrap"><img class="about-slider__image" src="images/images/about/about.jpg" alt="slide"></div>
-										</div>
-									</div>
-									<div class="about-slider__cell">
-										<div class="about-slide">
-											<div class="about-slide__wrap"><img class="about-slider__image" src="images/images/about/about.jpg" alt="slide"></div>
-										</div>
-									</div>
-									<div class="about-slider__cell">
-										<div class="about-slide">
-											<div class="about-slide__wrap"><img class="about-slider__image" src="images/images/about/about.jpg" alt="slide"></div>
-										</div>
-									</div>
-									<div class="about-slider__cell">
-										<div class="about-slide">
-											<div class="about-slide__wrap"><img class="about-slider__image" src="images/images/about/about.jpg" alt="slide"></div>
-										</div>
-									</div>
+									<div class="about-slider__cell"><a class="about-slide" href="#">
+											<div class="about-slide__wrap"><img class="about-slide__image" src="images/images/about/about.jpg" alt="slide"></div></a></div>
+									<div class="about-slider__cell"><a class="about-slide" href="#">
+											<div class="about-slide__wrap"><img class="about-slide__image" src="images/images/about/about.jpg" alt="slide"></div></a></div>
+									<div class="about-slider__cell"><a class="about-slide" href="#">
+											<div class="about-slide__wrap"><img class="about-slide__image" src="images/images/about/about.jpg" alt="slide"></div></a></div>
+									<div class="about-slider__cell"><a class="about-slide" href="#">
+											<div class="about-slide__wrap"><img class="about-slide__image" src="images/images/about/about.jpg" alt="slide"></div></a></div>
+									<div class="about-slider__cell"><a class="about-slide" href="#">
+											<div class="about-slide__wrap"><img class="about-slide__image" src="images/images/about/about.jpg" alt="slide"></div></a></div>
+									<div class="about-slider__cell"><a class="about-slide" href="#">
+											<div class="about-slide__wrap"><img class="about-slide__image" src="images/images/about/about.jpg" alt="slide"></div></a></div>
 								</div>
 							</div>
 						</div>
@@ -277,7 +259,7 @@
 					<div class="box box--middle">
 						<div class="additional-info__inner">
 							<div class="title title--default-space title--section">Дополнительная информация</div>
-							<div class="additional-info__grid">
+							<div class="additional-info__wrap">
 								<div class="additional-info__cell">
 									<div class="additional-item">
 										<div class="additional-item__image-wrap"><img class="additional-item__image" src="images/images/additional/additional-item.jpg" alt="additional"></div>
@@ -304,6 +286,25 @@
 													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 													eiusmod tempor incididunt ut labore et dolore magna aliqua.
 													Quis ipsum suspendisse ultricesgravida.
+													eiusmod tempor incididunt ut labore et dolore magna aliqua.
+													Quis ipsum suspendisse ultricesgravida.
+												</div>
+											</div>
+											<div class="additional-item__btn"><a class="btn" href="#">Узнать</a></div>
+										</div>
+									</div>
+								</div>
+								<div class="additional-info__cell">
+									<div class="additional-item">
+										<div class="additional-item__image-wrap"><img class="additional-item__image" src="images/images/additional/additional-item.jpg" alt="additional"></div>
+										<div class="additional-item__inner">
+											<div class="additional-item__data">
+												<div class="additional-item__title">Статья</div>
+												<div class="additional-item__content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+													eiusmod tempor incididunt ut labore et dolore magna aliqua.
+													eiusmod tempor incididunt ut labore et dolore magna aliqua.
+													eiusmod tempor incididunt ut labore et dolore magna aliqua.
 													eiusmod tempor incididunt ut labore et dolore magna aliqua.
 													Quis ipsum suspendisse ultricesgravida.
 												</div>
