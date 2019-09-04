@@ -41,17 +41,18 @@
 				</div>
 			</header>
 			<main class="main">
-				<div class="preview"><img class="preview__bg" src="images/images/preview/bg.jpg" alt="">
+				<div class="preview">
+					<!--data-rellax-min="-120" data-rellax-max="120"--><img class="preview__bg" src="images/images/preview/bg.jpg" alt="">
 					<div class="preview__mountain"><img src="images/images/preview/mountains.png" alt=""></div>
-					<div class="preview__clouds"></div>
+					<div class="clouds-animate preview__clouds" data-rellax-percentage="1.5"></div>
 					<div class="box">
 						<div class="preview__inner">
 							<h1 class="preview__title">Экологическая  ответственность</h1>
-							<div class="preview__name"><img src="images/images/preview/name.png" alt="barrier"></div>
+							<div class="preview__name name-animate" data-rellax-percentage="0.5"><img src="images/images/preview/name.png" alt="barrier"></div>
 						</div>
 					</div>
 				</div>
-				<div class="problem">
+				<div class="problem preview__name problem-animate">
 					<div class="problem__bg"></div>
 					<div class="box box--middle">
 						<div class="problem__inner">
@@ -343,8 +344,9 @@
 				</div>
 			</footer>
 		</div>
-		<script src="js/vendor/jquery-3.2.1.min.js"></script>
-		<script src="js/vendor/slick.js"></script>
+		<!--script(src="js/vendor/jquery-3.2.1.min.js")-->
+		<!--script(src="js/vendor/slick.js")-->
+		<!--script(src="js/vendor/rellax.min.js")-->
 		<script src="js/app.min.js?v0.1"></script>
 	</body>
 </html>
