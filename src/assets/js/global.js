@@ -11,12 +11,22 @@ $window.on('resize', function () {
 });
 
 $window.on('scroll', function () {
-  // inWindow()
+
 });
 // $(document).on('click touchend', '.information__images', infoModal);
 
 //
 $(document).ready(function () {
+  var rellax = new Rellax('.name-animate', {
+    speed: -3,
+  });
+  var rellax2 = new Rellax('.clouds-animate', {
+    speed: 4,
+  });
+  var rellax3 = new Rellax('.problem-animate', {
+    speed: 1,
+  });
+
   $('.about-slider__inner').slick({
     slidesToShow: 3,
     slidesToScroll: 3,

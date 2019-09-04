@@ -39,5 +39,8 @@
     "gulp-watch": "^4.3.11",
     "imagemin-mozjpeg": "^6.0.0",
     "jshint": "^2.9.6"
+  },
+  "dependencies": {
+    "rellax": "^1.10.0"
   }
 }
