@@ -282,9 +282,9 @@ body {
     min-height: 600px;
   }
 
-  @include to_width(340px) {
+  @include to_width(375px) {
     padding-top: 120px;
-    min-height: 490px;
+    min-height: 525px;
     height: auto;
   }
 
@@ -360,7 +360,7 @@ body {
     height: 0;
     padding-bottom: 56%;
 
-    @include to_width(340px) {
+    @include to_width(375px) {
       padding-bottom: 100%;
     }
 
@@ -840,28 +840,33 @@ body {
 
   &__title {
     font-weight: 500;
-    padding-bottom: 14px;
     font-size: 24px;
     line-height: 1;
     color: #4B4B4B;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
     margin-bottom: 15px;
-    height: 73px;
+
+    @media (min-width: 601px) {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      height: 73px;
+    }
   }
 
   &__content {
     font-size: 18px;
     line-height: 23px;
     color: #707070;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    height: 140px;
     margin-bottom: 15px;
+
+    @media (min-width: 601px) {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      height: 140px;
+    }
 
     @include to_width(767px) {
       font-size: 16px;
